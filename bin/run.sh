@@ -41,6 +41,8 @@ pushd "${input_dir}" > /dev/null
 test_output=$(box task run TestRunner 2>&1)
 exit_code=$?
 
+echo "${test_output}"
+
 popd > /dev/null
 
 # Write the results.json file based on the exit code of the command that was 
