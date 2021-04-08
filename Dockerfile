@@ -1,8 +1,11 @@
-FROM alpine:3.10
+FROM ortussolutions/commandbox:amd64-jdk8-3.3.0
 
-# TODO: install packages required to run the tests
-# RUN apk add --no-cache coreutils
-
-COPY . /opt/test-runner
 WORKDIR /opt/test-runner
+
+# Pre-install box dependencies for offline usage
+COPY box.json .
+RUN box install
+
+COPY . .
+
 ENTRYPOINT ["/opt/test-runner/bin/run.sh"]
