@@ -50,7 +50,8 @@ if [ $exit_code -eq 0 ]; then
 else
     # Sanitize the test output
     sanitized_test_output=$(echo "${test_output}" \
-        | sed -E 's/.*(Installing package|Installing.+dependencies).*//g')
+        | sed -E 's/.*(Installing package|Installing.+dependencies).*//g' \
+        | sed -e '/./,$!d' -e :a -e '/^\n*$/{$d;N;ba' -e '}')
 
     # Manually add colors to the output to help scanning the output for errors
     colorized_test_output=$(echo "${sanitized_test_output}" \
