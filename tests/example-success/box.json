@@ -1,8 +1,8 @@
 {
-  "dependencies": {
-    "testbox": "^2.5.0+107"
+  "dependencies":{
+      "testbox":"^2.5.0+107"
   },
-  "installPaths": {
-    "testbox": "testbox/"
+  "installPaths":{
+      "testbox":"testbox"
   }
 }

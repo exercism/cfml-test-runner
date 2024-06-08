@@ -1,4 +1,4 @@
-FROM ortussolutions/commandbox:amd64-jdk8-3.3.0
+FROM ortussolutions/commandbox:jdk11-3.9.3
 
 WORKDIR /opt/test-runner
 
