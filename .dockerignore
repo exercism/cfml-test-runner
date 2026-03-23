@@ -1,8 +1,6 @@
 .git/
 .github/
 tests/
-bin/run-tests.sh
-bin/run-tests-in-docker.sh
 .appends
 .gitignore
 .gitattributes
