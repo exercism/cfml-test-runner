@@ -2,12 +2,12 @@
   "version": 2,
   "tests": [
     {
-      "test_code": "SUT = new MiscLongerTestCode( capacity = 2 );\n\t\t\t\tSUT.write( 1 );\n\t\t\t\texpect( SUT.read() ).toBe( 1 );",
+      "test_code": "SUT = new MiscLongerTestCode();\n\t\t\t\tSUT.write( 1 );\n\t\t\t\texpect( SUT.read() ).toBe( 1 );",
       "name": "reports multiline test code",
       "status": "pass"
     },
     {
-      "test_code": "SUT = new MiscLongerTestCode( capacity = 2 );\n\t\t\t\tSUT.write( 1 );\n\t\t\t\tSUT.write( 2 );\n\t\t\t\texpect( SUT.read() ).toBe( 1 );\n\t\t\t\texpect( SUT.read() ).toBe( 2 );",
+      "test_code": "SUT = new MiscLongerTestCode();\n\t\t\t\tSUT.write( 1 );\n\t\t\t\tSUT.write( 2 );\n\t\t\t\texpect( SUT.read() ).toBe( 1 );\n\t\t\t\texpect( SUT.read() ).toBe( 2 );",
       "name": "reports multiple expects",
       "status": "pass"
     }
