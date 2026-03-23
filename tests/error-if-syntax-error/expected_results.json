@@ -1,0 +1,5 @@
+{
+  "message": "Error compiling [ /solution/ErrorIfSyntaxError.cfc ]. /solution/ErrorIfSyntaxError.cfc: Line: 1 Col: 0 - 'componentTTT' was unexpected \nexpecting one of: 'abstract', 'final', Operator, Statement\ncomponentTTT@@ clazzzz\n^^^^^^^^^^^^",
+  "version": 2,
+  "status": "error"
+}

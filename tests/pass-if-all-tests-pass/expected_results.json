@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "tests": [
+    {
+      "test_code": "expect( SUT.leapYear( year='2015' ) ).toBeFalse();",
+      "name": "this should pass",
+      "status": "pass"
+    },
+    {
+      "test_code": "expect( SUT.leapYear( year='1996' ) ).toBeTrue();",
+      "name": "this should also pass",
+      "status": "pass"
+    }
+  ],
+  "status": "pass"
+}

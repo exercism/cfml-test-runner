@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "tests": [
+    {
+      "test_code": "expect( SUT.returnsTrue() ).toBeTrue();",
+      "name": "this should pass",
+      "status": "pass"
+    },
+    {
+      "test_code": "expect( SUT.returnsTrue() ).toBeFalse();",
+      "message": "Expected [true] to be false",
+      "name": "this should fail",
+      "status": "fail"
+    }
+  ],
+  "status": "fail"
+}

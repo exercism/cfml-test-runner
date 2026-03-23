@@ -1,1 +1,0 @@
-componentTTT@@ clazzzz
