@@ -12,6 +12,8 @@ set -euo pipefail
 # Example:
 # ./bin/run-tests.sh
 
+exit_code=0
+
 # Iterate over all test directories
 for test_dir in tests/*; do
   test_dir_name="${test_dir##*/}"
@@ -22,7 +24,11 @@ for test_dir in tests/*; do
   bin/run.sh "${test_dir_name}" "${test_dir_path}" "${test_dir_path}"
 
   echo "${test_dir_name}: comparing results.json to expected_results.json"
-  if ! diff "${results_file_path}" "${expected_results_file_path}"; then
-    exit 1
+  diff "${results_file_path}" "${expected_results_file_path}"
+
+  if [ $? -ne 0 ]; then
+      exit_code=1
   fi
 done
+
+exit ${exit_code}
