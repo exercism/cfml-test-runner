@@ -35,7 +35,7 @@ fi
 
 echo "${slug}: testing..."
 
-script_dir="${BASH_SOURCE[0]%/*}"
+script_dir="$0"
 
 # Avoid JVM DNS lookup issue on Alpine
 echo "127.0.0.1 $HOSTNAME" > /tmp/hosts
