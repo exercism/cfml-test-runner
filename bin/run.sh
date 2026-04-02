@@ -37,8 +37,8 @@ echo "${slug}: testing..."
 
 script_dir="${BASH_SOURCE[0]%/*}"
 
-# Avoid DNS lookup since no network access in prod
-echo "127.0.0.1 $(hostname)" > /tmp/hosts
+# Avoid JVM DNS lookup issue on Alpine
+echo "127.0.0.1 $HOSTNAME" > /tmp/hosts
 export JAVA_TOOL_OPTIONS="-Djdk.net.hosts.file=/tmp/hosts"
 
 # Need a writable home directory
