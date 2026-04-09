@@ -1,0 +1,5 @@
+{
+  "message": "Error compiling [ /solution/ErrorIfEmptyFile.cfc ]. /solution/ErrorIfEmptyFile.cfc: Line: 1 Col: 0 - '<EOF>' was unexpected \nexpecting one of: 'abstract', 'final', Operator, Statement\n\n",
+  "version": 2,
+  "status": "error"
+}

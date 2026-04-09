@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "tests": [
+    {
+      "test_code": "expect( SUT.hello() ).toBe( 'Hello, World!' );",
+      "name": "This should pass",
+      "status": "pass"
+    }
+  ],
+  "status": "pass"
+}
