@@ -1,4 +1,4 @@
-FROM ortussolutions/boxlang:cli-alpine-1.11.0
+FROM ortussolutions/boxlang:cli-alpine-1.18.0
 
 WORKDIR /opt/test-runner
 
