@@ -24,7 +24,7 @@ for test_dir in tests/*; do
   bin/run.sh "${test_dir_name}" "${test_dir_path}" "${test_dir_path}"
 
   echo "${test_dir_name}: comparing results.json to expected_results.json"
-  diff "${results_file_path}" "${expected_results_file_path}"
+  diff "${expected_results_file_path}" "${results_file_path}"
 
   if [ $? -ne 0 ]; then
       exit_code=1

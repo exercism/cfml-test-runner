@@ -1,5 +1,5 @@
-solutionPath = server.cli.parsed.positionals[ 1 ];
-resultsPath = server.cli.parsed.positionals[ 2 ];
+solutionPath = server.cli.parsed.positionals[ 2 ];
+resultsPath = server.cli.parsed.positionals[ 3 ];
 
 try {
     userHome = server.system.properties[ "user.home" ];
